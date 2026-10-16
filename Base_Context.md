@@ -1,6 +1,6 @@
 # Base context
 
-This document records what the project started from. Everything described here now lives in `Older_Context/`. It is written so that someone who never saw those files can understand what they contained, what was good in them, what was wrong with them, and which parts carried forward into the new skills described in `Skill_Design.md`.
+This document records what the project started from. Everything described here comes from Isobel (Bella) Smith GitHub: https://github.com/bgsbgsbgs42 LinkedIn: https://www.linkedin.com/in/bella-smith-/. She worked on collecting the base literature needed and added some modification to it. And then she shared them with me, based on which I designed these skills. I made this document from all what she worked on, and therefore this document is written so that someone who never saw those files can understand what they contained, what was good in them, what was wrong with them, and which parts carried forward into the new skills described in `Skill_Design.md`.
 
 ## 1. What the starting material was
 

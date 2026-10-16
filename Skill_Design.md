@@ -4,7 +4,7 @@ This document records how the five Socratic research skills were designed: the c
 
 ## 1. The brief
 
-The starting request was to develop skills from all of the material in the project folder, because it "feels a bit fragmented and a bit too specific", and to make it "generic for people with different background and usecase". The first step was an analysis of the existing files before any design work.
+The starting request was to develop skills from all of the material and context provided by Isobel (Bella) Smith GitHub: https://github.com/bgsbgsbgs42 LinkedIn: https://www.linkedin.com/in/bella-smith-/. Her base part was a bit fragmented and als a bit too specific in many angles, and therefore one of the aim was to make it more generic for people with different background and usecases. The first step was an analysis of the existing files before any design work.
 
 ## 2. The first analysis
 
@@ -16,17 +16,17 @@ The analysis found two finished skills (`idea-refine` and `socratic-method`) sit
 - The two skills shared machinery (assumption ranking, stress tests, audits, null-result questions) but each had built its own version.
 - Packaging was inconsistent: folder names with spaces and "-v2" suffixes, no top-level README, nothing tying the plugins together.
 
-Two ways of generalising the Socratic skill were put forward: widen the fixed modes into a few broad research types, or drop fixed modes and have the model infer the questioning style from the material. The user chose the first, in a more developed form described in section 4.
+Two ways of generalising the Socratic skill were put forward: widen the fixed modes into a few broad research types, or drop fixed modes and have the model infer the questioning style from the material. I chose the first, in a more developed form described in section 4.
 
 ## 3. Line-by-line feedback on the philosophical prompt bank
 
-The user then reviewed `Reusable Socratic Prompts for Philosophical Research.md` and gave six specific changes. These became the core interaction rules for every skill in the final set.
+I then reviewed `Reusable Socratic Prompts for Philosophical Research.md` and gave six specific changes. These became the core interaction rules for every skill in the final set.
 
 ### 3.1 Replace the single question with a themed round
 
 Original rule: "Ask one main question at a time and wait for an answer."
 
-The user's objection: a single question "is mostly not able to ask different angles" and "gets harder to write". The replacement is a round built around one central theme, concern or aspect, with four or five questions diverging from it. The researcher answers the round as a whole.
+I's objection: a single question "is mostly not able to ask different angles" and "gets harder to write". The replacement is a round built around one central theme, concern or aspect, with four or five questions diverging from it. The researcher answers the round as a whole.
 
 This reverses one of the old skill's strongest principles, which held that several questions let the researcher answer the easiest and drop the hard one. The new design handles that risk differently: every question in a round serves the same theme, so no question can carry the round away from the issue that matters, and the summary that opens the next round records which questions went unanswered so they can be returned to.
 
@@ -41,13 +41,13 @@ Removed:
 - "Do not answer questions on the researcher's behalf."
 - "Do not use disguised advice, stacked questions or rhetorical questions whose intended answer is obvious."
 
-The user's reason: these "require too much theory of mind on the model's end", and models are not good at applying them. Judging whether a question is leading, or whether a phrase amounts to advice, requires the model to model the researcher's reading of its own words. The final design relies instead on mechanical practices that can be checked on the page: the themed round, the summary, the question labels, and the instruction to stop after the questions.
+I's reason: these "require too much theory of mind on the model's end", and models are not good at applying them. Judging whether a question is leading, or whether a phrase amounts to advice, requires the model to model the researcher's reading of its own words. The final design relies instead on mechanical practices that can be checked on the page: the themed round, the summary, the question labels, and the instruction to stop after the questions.
 
 ### 3.4 Let the model decide the length of a session
 
 Original: "Conduct an adaptive dialogue of approximately [NUMBER] substantive turns."
 
-The user's change: let the model judge how many turns are needed, and give it the depth required and the purpose, scope and audience of the research instead of a number. Section 5 describes how this developed into the depth dial and the estimate-and-confirm step.
+I's change: let the model judge how many turns are needed, and give it the depth required and the purpose, scope and audience of the research instead of a number. Section 5 describes how this developed into the depth dial and the estimate-and-confirm step.
 
 ### 3.5 Reorder the arc and remove one stage
 
@@ -76,11 +76,11 @@ Every instance of "ask one question at a time" in the material was to be replace
 
 ### 3.7 From thirty-two prompts to one method
 
-The user's view of the remaining prompts: the smaller ones "are great when the above changes are made but don't stand independently. Rather they can be modular elements used by the first main prompt to work properly." The extended examination therefore became the backbone of every session, and the narrower prompts became modular research moves that the backbone calls on.
+I's view of the remaining prompts: the smaller ones "are great when the above changes are made but don't stand independently. Rather they can be modular elements used by the first main prompt to work properly." The extended examination therefore became the backbone of every session, and the narrower prompts became modular research moves that the backbone calls on.
 
 ## 4. Five categories instead of two modes
 
-The user then set the target: five Socratic questioning skills, "specifically for Claude but also useful in general", usable by "anyone irrespective of their background":
+I then set the target: five Socratic questioning skills, "specifically for Claude but also useful in general", usable by "anyone irrespective of their background":
 
 1. Philosophical research
 2. Conceptual research
@@ -90,14 +90,14 @@ The user then set the target: five Socratic questioning skills, "specifically fo
 
 Two constraints came with this:
 
-- **No domain content in the skills.** "The specific use case of such type of research, that is in AI safety, or AI alignment etc. will be done by the user at the time of use. Don't embed anything regarding their specific use case in the main skill."
+- **No domain content in the skills.** "The specific use case of such type of research, that is in AI safety, or AI alignment etc. will be done by I at the time of use. Don't embed anything regarding their specific use case in the main skill."
 - **Shared modules.** "For all these 5 skills there are a lot of common modular elements. I want you to abstract them and keep them separately that would be called upon on use in each skill."
 
-And one new requirement: when a session starts, the user is prompted for all the major placeholders and also for "all the rough work, drafts and base setup work already done in the research project".
+And one new requirement: when a session starts, I is prompted for all the major placeholders and also for "all the rough work, drafts and base setup work already done in the research project".
 
 ## 5. Designing by Socratic dialogue
 
-Before building anything, the user asked to be questioned Socratically to settle the remaining design elements. The rounds used the format just agreed: one theme, several diverging questions, then a summary of the answers before the next theme.
+Before building anything, I asked to be questioned Socratically to settle the remaining design elements. The rounds used the format just agreed: one theme, several diverging questions, then a summary of the answers before the next theme.
 
 ### Round 1: what distinguishes the five categories
 
@@ -119,8 +119,8 @@ Answers:
 
 - **No standalone skills.** The design should consist of "multiple modules of research traits and capabilities", with each category skill using them "as dependencies". The category skills act as frameworks for their kind of research, containing the instructions for how to do that research using the shared modules. "Make it as modular as possible, and abstract out as much general skills useful in all categories as possible."
 - **The intake fields are general already.** Material; purpose, stage and output; audience or judge; constraints; prior work. No changes.
-- **Yes to the category check, without forcing a switch.** If the material fits another category better, say so, but also invite the user to continue with the skill they chose and guide them on how to make their intake fit that category.
-- **Depth from every signal, plus a dial, plus a stated estimate.** The model infers depth from everything available (purpose, scope, audience and more), the intake offers an explicit light / standard / deep dial, and after its analysis the model tells the user how many rounds it expects to need. The user can accept or override.
+- **Yes to the category check, without forcing a switch.** If the material fits another category better, say so, but also invite I to continue with the skill they chose and guide them on how to make their intake fit that category.
+- **Depth from every signal, plus a dial, plus a stated estimate.** The model infers depth from everything available (purpose, scope, audience and more), the intake offers an explicit light / standard / deep dial, and after its analysis the model tells I how many rounds it expects to need. I can accept or override.
 - **Shared base, category-specific application.** "The base idea and rigour of audits should be shared and general for all categories", but each category skill specifies how to use the shared audit, and the same applies to report variants. Then the principle was generalised: "I want the base idea of point 5 applied to all such elements and traits of research and not just audit."
 
 That last answer fixed the architecture. Every shared element is written once, generally, and every category skill says how that element applies in its own kind of research.
@@ -131,9 +131,9 @@ That last answer fixed the architecture. Every shared element is written once, g
 
 The first architecture proposal had five short `SKILL.md` files and a shared library: eleven process modules (intake, turn mechanics, arc, contradictions, dialogue safety, checkpoints, audit skeleton, report variants, writing style, evidence integrity, plus a claim-sorting step) and fifteen move modules. It included a table of which moves each category treated as core and which it used lightly.
 
-### 6.2 The user's revisions
+### 6.2 I's revisions
 
-The user accepted most of it and asked for two changes.
+I accepted most of it and asked for two changes.
 
 1. **Category skills must be comprehensive, not short.** Each `SKILL.md` should "stick to what I mentioned before" (use the shared modules as dependencies and say how to apply them) but should also be "detailed about the things they are concerned with... detailed and comprehensive. The framework should cover each and every aspect of that category of research."
 2. **The module list was too thin.** It "doesn't seem to cover major traits and all aspects for all the categories... there can be more of it to make it all robust and reliable."
@@ -153,7 +153,7 @@ The response to the second was to add modules that the source material covered b
 | `operationalisation-and-validity.md` (expanded) | Adds validity theory (construct, internal, external, ecological, statistical conclusion) and reliability | Technical bank evaluation prompts |
 | `reproducibility-and-generalisation.md` (expanded) | Adds the generalisation ladder and distribution shift | Toy-model audit; distribution-shift prompts |
 
-The user approved the expanded plan and asked for this document and `Base_Context.md` to be written before building.
+I approved the expanded plan and asked for this document and `Base_Context.md` to be written before building.
 
 ## 7. Final architecture
 
@@ -213,10 +213,10 @@ socratic-research/                       the plugin
 
 1. **Intake.** One message asking for the material and all the rough work behind it (notes, drafts, outlines, data, code, set-up, earlier feedback), the purpose, stage and intended output, the audience or judge, the constraints, what has already been read or tried, a depth setting (light, standard, deep, or "you decide"), and dialogue or written memo.
 2. **Intake summary.** Claude restates what it received, lists the assumptions it is making for anything missing, sorts the claims by kind, and checks the category fit. If the material belongs better in another category, Claude says which and why, and also explains how to reframe the material to continue in the chosen skill.
-3. **Plan.** Claude states its estimated number of rounds, how they divide across the arc, and where checkpoints fall. The user accepts or changes it.
+3. **Plan.** Claude states its estimated number of rounds, how they divide across the arc, and where checkpoints fall. I accepts or changes it.
 4. **Rounds.** Each round opens with a summary of the last answers, names one theme and the stage it belongs to, says why the theme matters now, asks four or five labelled questions that approach the theme from different angles, and stops.
 5. **Checkpoints.** Every three rounds, a ledger of what is established, still open, in tension and revised, the next most consequential theme, and rounds used against the estimate, with a revised estimate if needed.
-6. **Ending.** An audit built from the shared skeleton plus the category's own sections, with every item tagged by origin, and open questions converted into research tasks with completion criteria. A report variant (supervision note, examiner's report, reviewer's report) replaces or follows it if the user asked for one.
+6. **Ending.** An audit built from the shared skeleton plus the category's own sections, with every item tagged by origin, and open questions converted into research tasks with completion criteria. A report variant (supervision note, examiner's report, reviewer's report) replaces or follows it if I asked for one.
 
 ### 7.3 How the categories differ
 
@@ -237,7 +237,7 @@ socratic-research/                       the plugin
 | Themed rounds of four or five questions | One question cannot approach a concern from several angles, and is harder to write well |
 | Summary at the start of every round | Makes progress visible, lets the researcher correct misreadings, gives the audit a running record |
 | No rules that require judging one's own phrasing | Models apply theory-of-mind rules unreliably; mechanical structure is checkable |
-| Depth inferred, dialled and confirmed | Researchers cannot guess a turn count; the model can estimate from signals, and the user keeps the final say |
+| Depth inferred, dialled and confirmed | Researchers cannot guess a turn count; the model can estimate from signals, and I keeps the final say |
 | Counterexamples and rivals placed just before revision | Strongest pressure comes last, immediately before the researcher is asked to revise |
 | Research-question examination moved out of the default arc | The arc examines the work as it stands; questioning the question is available on demand |
 | Five categories, one per session | Projects normally belong to one category; cross-category work is done in parts |
@@ -252,7 +252,7 @@ socratic-research/                       the plugin
 
 - **Maieutics without the rule against answering for the researcher.** The method's aim is for the researcher to produce the ideas. With the explicit rule removed, the design protects that aim structurally: rounds end in questions and stop, summaries report only what the researcher said, and Claude gives its own view only when asked, labelled as its own.
 - **Several questions per round versus the risk of dodging the hard one.** Handled by keeping every question on one theme and by recording unanswered questions in the next summary.
-- **Domain neutrality versus the user's own field.** The user works in AI safety and alignment. The skills contain no domain material; the intake asks for the field and its conventions, and a domain-specific companion could be added later without changing the core.
+- **Domain neutrality versus I's own field.** I works in AI safety and alignment. The skills contain no domain material; the intake asks for the field and its conventions, and a domain-specific companion could be added later without changing the core.
 - **One category per session versus mixed material.** The claim-sorting step identifies the parts of the material that belong elsewhere and records them as open items for a later session with another skill.
 - **Shared files and single-skill installation.** Category skills reach the shared library by relative path (`../../shared/`). That works when the whole plugin is installed. Each skill also falls back to a `shared/` folder inside its own folder, so a skill installed on its own works if `shared/` is copied into it; the README explains how.
 
