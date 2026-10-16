@@ -1,0 +1,6 @@
+{
+  "name": "socratic-research",
+  "version": "1.0.0",
+  "description": "Five Socratic questioning skills for research of any field: philosophical, conceptual, theoretical, technical and empirical. Each runs an in-depth, round-based examination of the researcher's own work, built on a shared library of process modules and reusable research moves.",
+  "keywords": ["research", "socratic", "philosophy", "theory", "experimental-design", "peer-review", "thesis", "critical-thinking"]
+}

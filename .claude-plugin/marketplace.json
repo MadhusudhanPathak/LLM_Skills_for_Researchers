@@ -1,0 +1,13 @@
+{
+  "name": "llm-skills-for-researchers",
+  "owner": {
+    "name": "LLM Skills for Researchers"
+  },
+  "plugins": [
+    {
+      "name": "socratic-research",
+      "source": "./socratic-research",
+      "description": "Five Socratic questioning skills for philosophical, conceptual, theoretical, technical and empirical research, built on a shared library of process modules and research moves."
+    }
+  ]
+}
