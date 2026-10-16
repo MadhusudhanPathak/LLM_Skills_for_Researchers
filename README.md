@@ -4,6 +4,8 @@ Socratic questioning skills that help researchers in any field examine their own
 
 The skills are written for [Claude](https://claude.com) (as Claude Code plugin skills), but every file is plain Markdown and the method works with any capable LLM.
 
+![Header_Graphics](graphic.jpg)
+
 ## The five skills
 
 Each skill is a framework for one kind of research. Pick the one that matches the main contribution of your work.
